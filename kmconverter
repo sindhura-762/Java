@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class KmConverter {
+    /**
+     * @param args
+     */
+    public static void main(String args[]){
+        float km,cm,inch,feet,m;
+        System.out.println("Enter distance between 2 cities in km: ");
+        try (Scanner sc = new Scanner(System.in)) {
+            km = sc.nextInt();
+        }
+        m = (float) (km*1000.0);
+        cm = (float) (km*100000.0);
+        feet = (float) (km*3280.84);
+        inch = (float) (km*39370.1);
+
+        System.out.println("Distance between 2 cities in metres: "+m);
+        System.out.println("Distence between 2 cities in centimetres: "+cm);
+        System.out.println("Distance between 2 cities in feet: "+feet);
+        System.out.println("Distance between 2 cities in inch: "+inch);
+        
+    }
+    
+}
