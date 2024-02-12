@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class raisedtothepower {
+    //enter any two numbers ..and answer will be one num raised to other.
+    
+    public static void main (String args[]){
+        int x,y;
+        Scanner sc = new Scanner(System.in);
+        x = sc.nextInt();
+        y = sc.nextInt();
+        System.out.println(Math.pow(x,y));
+
+
+    }
+    
+}
