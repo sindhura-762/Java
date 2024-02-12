@@ -1,0 +1,23 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class TypesOfInput {
+    public static void main(String args[])  throws Exception{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println("Enter the byte value: ");
+            byte b= Byte.parseByte(br.readLine());
+            System.out.println("Enter the short value: ");
+            short s= Short.parseShort(br.readLine());
+            System.out.println("Enter the integer value: ");
+            int i = Integer.parseInt(br.readLine());
+            System.out.println("Enter the long value: ");
+            long l =Long.parseLong(br.readLine());
+            System.out.println("Enter the float value: ");
+            float f = Float.parseFloat(br.readLine());
+            System.out.println("Enter the double value: ");
+            double d = Double.parseDouble(br.readLine());
+            System.out.println("Enter the character : ");
+            char c = (char) br.read();            
+            System.out.println("print the inputs: "+b+" "+s+" "+i+" "+l+" "+f+" "+d+" "+c);
+        }
+    }
