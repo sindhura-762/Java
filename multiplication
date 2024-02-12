@@ -1,0 +1,14 @@
+import java.util.*;
+public class multiplication {
+    public static void main(String args[]){
+
+    int num,i,t;
+    Scanner sc = new Scanner(System.in);
+    num = sc.nextInt();
+    System.out.println("Table of "+num);
+    for(i=1;i<=10;i++){
+        System.out.println( i+"*"+num+"="+(t=num*i));
+    }
+    }
+    
+}
