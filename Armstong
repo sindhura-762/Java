@@ -1,0 +1,23 @@
+import java.util.*;
+public class armstrong {
+    public static void main(String args[]){
+        int n,r,sum=0,result;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        result = n;
+        do{
+        r=n%10;
+        sum = sum+(r*r*r);
+        n=n/10;
+        }
+        while(n>0);
+
+        if(result == sum){
+            System.out.println("ITS AN ARMSTRONG NUMBER");
+        }
+        else{
+            System.out.println("ITS NOT AN ARMSTRONG NUMBER");
+        }
+    }
+    
+}
