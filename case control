@@ -1,0 +1,62 @@
+import java.util.*;
+public class casecontrol {
+    public static void main(String args[]){
+    int num;
+    System.out.println("case 1 for factorial");
+    System.out.println("case 2 for even or odd number");
+    System.out.println("case 3 for prime numbers");
+    System.out.println("enter the number: ");
+    Scanner sc = new Scanner(System.in);
+    num = sc.nextInt();
+    
+    
+        switch(num){
+        case 1:
+        System.out.println("enter the number");
+        int n=sc.nextInt();
+        int fact=1;
+        for(int i=1;i<=n;i++){
+        fact = fact*i;
+        }
+        System.out.println("factorial: "+fact);
+        
+        break;
+
+        case 2:
+        System.out.println("enter the number: ");
+        int a=sc.nextInt();
+        while(a>0);
+        if(a%2==0){
+                System.out.println("its even");
+            }
+            else{
+                System.out.println("its odd");
+            }
+        break;
+
+        case 3:
+        int b,i;
+        System.out.println("enter the number: ");
+        b = sc.nextInt();
+        for (num =1;num<=b;num++){
+            if(num==1||num==0){
+                System.out.println(num);
+                continue;
+            }
+            boolean isprime=true;
+            for(i=2;i<=num/2;i++){
+                if(num%i==0){
+                    isprime=false;
+                }
+            }
+            if(isprime){
+                System.out.println( "prime");
+            }
+            break;
+
+        }
+        default :
+        System.out.println("exit");
+    }
+}
+}
