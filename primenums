@@ -1,0 +1,28 @@
+import java.util.*;
+public class primenums {
+
+    public static void main (String args[]){
+        int num,i,N;
+        System.out.println("TILL HOW MANY PRIMES? :");
+        Scanner sc = new Scanner(System.in);
+        N=sc.nextInt();
+
+        for (num =1;num<=N;num++){
+            if(num==1||num==0){
+                System.out.println(num);
+                continue;
+            }
+            boolean isprime=true;
+            for(i=2;i<=num/2;i++){
+                if(num%i==0){
+                    isprime=false;
+                    break;
+                }
+            }
+            if(isprime){
+                System.out.println( num);
+            }
+        }
+    }
+    
+}
