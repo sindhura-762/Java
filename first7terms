@@ -1,0 +1,12 @@
+public class first7terms {
+    public static void main(String args[]){
+    float fact=1,value=0;
+        for (int i=1;i<=7;i++){
+            fact=fact*i;
+            value=value+(i/fact);
+            System.out.println("value: "+value);
+        }
+        
+  
+    }
+}
