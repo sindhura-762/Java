@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class RecAndCircle {
+    public static void main (String []args){
+        float length,breadth;
+        double areaofrec,areaofcircle,radius,perimeter ,circumference;
+
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the length,breadth and radius: ");
+            length = sc.nextInt();
+            breadth = sc.nextInt();
+            radius = sc.nextFloat();
+        }
+        areaofrec= length*breadth;
+        perimeter=2*(length+breadth);
+        areaofcircle = 3.14*radius*radius;
+        circumference=2*3.14*radius;
+
+        System.out.println("Area of rectangle :"+areaofrec);
+        System.out.println("perimeter of rectangle :"+perimeter);
+        System.out.println("Area of circle: "+areaofcircle);
+        System.out.println("Circumference of circle: "+circumference);
+
+        if(areaofrec>perimeter){
+            System.out.println("area of rec is greater than perimeter");
+        }
+        else{
+            System.out.println("area of rec ia not greater than perimeter");
+        }
+
+    }
+    
+}
