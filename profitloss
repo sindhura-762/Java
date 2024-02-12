@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class profitLoss {
+    public static void main (String args[]){
+        int cp,sp,val;//sp=selling price,cp=cost price
+        try (Scanner sc = new Scanner(System.in)) {
+            cp = sc.nextInt();
+            sp = sc.nextInt();
+        }
+        if(cp-sp<0){
+            System.out.println("PROFIT");
+        }
+        else{
+            System.out.println("LOSS");
+        }
+        val=-(cp-sp);
+        System.out.println("how much profit or loss :"+val);
+        }
+    
+}
