@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class FiveDigitSum {
+    public static void main(String args[]){
+        int Number,Digit,Sum=0;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the number: ");
+            Number = sc.nextInt();
+        }
+        while(Number>0){
+            Digit = Number % 10;
+            Sum = Sum + Digit;
+            Number = Number / 10;
+
+            System.out.println("Print the sum of five digits: "+Sum);
+
+        }
+
+        System.out.println("Print the sum of five digits: "+Sum);
+    
+    }
+    
+}
