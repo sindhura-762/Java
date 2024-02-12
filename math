@@ -1,0 +1,21 @@
+public class math {
+
+    public static void main(String args[]) {
+        /*int x = 4,y=0,z;
+        while(x>=0){
+            if(x==y)
+            break;
+            else
+            System.out.println(x+""+y);
+            x--;
+            y++;*/
+        
+            /*int i;
+            for(i=1;i<=5;System.out.println(i));
+            i++;*/
+        }
+        for(;;){
+            
+        }
+    }
+}
