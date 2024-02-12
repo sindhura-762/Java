@@ -1,0 +1,14 @@
+import java.util.*;
+public class leastage {
+    public static void main (String args[]){
+        int age;
+        try (Scanner sc = new Scanner(System.in)) {
+            age = sc.nextInt();
+            age = sc.nextInt();
+            age = sc.nextInt();
+        }
+        System.out.println((Math.min(Math.min(age,age),age)));
+    }
+
+    
+}
