@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class TempConverter {
+    public static void main(String args[]){
+        float farenheit,centigrade;
+
+        System.out.println("Enter the temperature in farenheit: ");
+        try (Scanner sc = new Scanner (System.in)) {
+            farenheit=sc.nextFloat();
+        }
+        centigrade=farenheit*32;
+
+        System.out.println("The farenheit temperature is: "+farenheit);
+        System.out.println("The centigrade temperature is: "+centigrade);
+
+    }
+    
+}
