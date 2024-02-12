@@ -1,0 +1,29 @@
+import java.util.*;
+public class coordinates {
+    public static void main (String args[]){
+    int x1,y1,h,k,radius;
+    float xy;
+    try (Scanner sc = new Scanner(System.in)) {
+        System.out.println("Enter the point coordinates: ");
+        x1 =sc.nextInt();
+        y1 =sc.nextInt();
+        System.out.println("Enter the center cordinates: ");
+        h =sc.nextInt();
+        k =sc.nextInt();
+        System.out.println("Enter the radius: ");
+        radius =sc.nextInt();
+    }
+    xy=(float) (Math.sqrt(Math.pow(x1-h,2))+(Math.pow(y1-k,2)));
+    if(xy>radius){
+        System.out.println("THE POINTS LIE OUTSIDE CIRCLE ");
+    }
+    else if(xy==radius){
+        System.out.println("THE POINTS ARE ON THE CIRCLE");
+    }
+    else if(xy<radius){
+        System.out.println("THE POINTS LIE INSIDE THE CIRCLE"); 
+       }
+
+    System.out.println("THE VALUE OF XY: "+xy);
+    }
+}
