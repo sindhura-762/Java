@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class result {
+    public static void main(String args[]){
+        float math,sci,soc,eng,ss,tot,per,avg;
+        System.out.println("enter the marks of 5 subjects: ");
+        Scanner sc = new Scanner(System.in);
+        math = sc.nextInt();
+        sci = sc.nextInt();
+        soc = sc.nextInt();
+        eng = sc.nextInt();
+        ss = sc.nextInt();
+
+        tot = math+sci+soc+eng+ss;
+        per = (tot/500)*100;
+        System.out.println("total: "+tot);
+        System.out.println("percentage: "+per);
+
+    }
+}
