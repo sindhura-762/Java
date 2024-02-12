@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Gross {
+    public static void main(String args[]){
+        float Gross,Basic,DA,HA;
+        System.out.println("Enter your BASIC SALARY= ");
+        try (Scanner sc = new Scanner(System.in)) {
+            Basic=sc.nextFloat();
+        }
+        DA=(Basic*40)/100;
+        HA=(Basic*20)/100;
+        Gross=Basic+DA+HA;
+        System.out.println("The Daily allowance= "+DA);
+        System.out.println("The House allowance= "+HA);
+        System.out.println("The gross value= "+Gross);
+    }
+}
