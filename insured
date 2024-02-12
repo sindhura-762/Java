@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class insured {
+    public static void main(String args[]){
+        int age;
+        String ms;
+        String sex;
+
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter your ms,sex,age : ");
+            ms = sc.next();
+            sex = sc.next();
+            age = sc.nextInt();
+        }
+        if((ms== "M||m")||(ms =="S||s"&& sex=="male" && age >30)||(ms== "S||s" && sex== "female"&&age>25)){
+            System.out.println("Driver is insured");
+        }
+        else{
+            System.out.println("Driver is not insured");
+        }
+        
+
+    }
+    
+}
