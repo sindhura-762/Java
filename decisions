@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Decisions {
+    public static void main(String args[]){
+        int BS,HRA,DA,Gross;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the Basic salary: ");
+            BS = sc.nextInt();
+        }
+        if(BS < 1500){
+            HRA = (BS*10)/100;
+            DA = (BS * 90)/100;
+        }
+        else{
+            HRA = 1500;
+            DA = (BS*98)/100;
+        }
+        Gross = BS+HRA+DA;
+        System.out.println("The Gross value : "+Gross);
+
+    }
+    
+}
