@@ -1,0 +1,13 @@
+// calculation of simple interest using command line argument
+
+public class CalOfSi{
+    public static void main (String [] args){
+        float p,r,si;
+        int n;
+        p= (Float.valueOf(args[0]));
+        n= (Integer.valueOf(args[1]));
+        r=(Float.valueOf(args[2]));
+        si=(n*p*r)/100;
+        System.out.println(si);
+    }
+}
