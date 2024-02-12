@@ -1,0 +1,23 @@
+import java.util.*;
+public class axispoint {
+    public static void main(String args[]){
+    int x,y;
+    try (Scanner sc = new Scanner(System.in)) {
+        x = sc.nextInt();
+        y = sc.nextInt();
+    }
+    if(x==0&&y==0){
+        System.out.println("THE POINT LIES ON ORIGIN");
+    }
+    else if(x==0&&y>0){
+        System.out.println("THE POINT LIES ON Y AXIS");
+    }
+    else if(x>0&&y==0){
+        System.out.println("THE POINT LIES ON X AXIS");
+    }
+    else{
+        System.out.println("NEITHER ON X NOR ON Y AXI");
+    }
+
+    }
+}
