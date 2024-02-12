@@ -1,0 +1,14 @@
+public class java_basics{
+    public static void main(String []args){
+        float a,b,c,d;
+        a=16.5f;
+        b=1.25f;
+        c=a%b;
+        d=a/b;
+        System.out.println("value of c:"+c);
+        System.out.println("value of d: "+d);
+        
+        
+
+    }
+}
