@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class CuurencyDomination {
+    public static void main (String args[]){
+        int tot_amt,amt,Hundred,Fifty,Tens;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the amount: ");
+            tot_amt = sc . nextInt();
+            amt = sc.nextInt();
+        }
+        Hundred = amt/100;
+        amt = amt%100;
+        Fifty = amt/50;
+        amt = amt%50;
+        Tens = amt/10;
+        amt = amt%10;
+        tot_amt = tot_amt - amt;
+
+        System.out.println("The no.of Hundres: "+Hundred+"\n"+"The no.of Fifties : "+Fifty+"\n"+"The no.of Tens: "+Tens);
+        System.out.println("The amount is : "+tot_amt);
+
+    }
+    
+}
